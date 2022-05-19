@@ -1,0 +1,71 @@
+#header{
+    text-align: center;
+}
+
+.title-text{
+    text-align: center;
+    margin: 10px 30px;
+    font-size: 5rem;
+}
+
+.start{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.score-board{
+    text-align: center;
+}
+
+.container{
+    width: 600px;
+    height: 1vh;
+}
+
+.tanah{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+.tanah::after{
+    content: "";
+    background: url(images/tanah.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    width: 200px;
+    height: 100px;
+    display: block;
+    position: relative;
+    bottom: -115px;
+    
+}
+
+.tikus{
+    width: 200px;
+    height: 200px;
+    background: url(images/tikus.png);
+    position:absolute;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -200px;
+    transition: 0.3s;
+}
+
+.tanah .tikus.muncul{
+    bottom: 0;
+}
+
+.tanah .tikus.pukul{
+    bottom: -200px;
+}
+
+.coinExplain{
+    text-align: center;
+    margin: 10px;
+}
